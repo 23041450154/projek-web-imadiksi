@@ -50,7 +50,43 @@ Keduanya merupakan anggota aktif IMADIKSI selama masa kuliah dan pernah menjabat
 Kegiatan ini menghadirkan dosen pembimbing yang berpengalaman dalam membimbing penelitian mahasiswa. Peserta dibekali dengan teknik penulisan proposal yang baik, cara mencari referensi ilmiah, dan tips mengikuti hibah penelitian.
 
 "Workshop ini sangat membantu kami memahami struktur proposal yang benar," ujar salah satu peserta, Rini Wulandari.', 
- 'Kegiatan', NULL, '2025-12-06');
+ 'Kegiatan', NULL, '2025-12-06'),
+
+('Bakti Sosial IMADIKSI di Panti Jompo Al-Ikhlas', 'bakti-sosial-imadiksi-panti-jompo',
+ 'Anggota IMADIKSI mengadakan kunjungan dan berbagi dengan penghuni panti jompo sebagai wujud kepedulian sosial.',
+ 'Palembang - Dalam rangka memperingati Hari Sosial Nasional, Ikatan Mahasiswa Bidikmisi KIP-Kuliah (IMADIKSI) UIN Raden Fatah Palembang menggelar kegiatan bakti sosial di Panti Jompo Al-Ikhlas pada Minggu (15/12/2025).
+
+Sebanyak 30 anggota aktif turut berpartisipasi dalam kegiatan ini. Mereka membawa sembako, perlengkapan mandi, dan obat-obatan untuk disumbangkan kepada penghuni panti.
+
+"Kegiatan ini merupakan bentuk kepedulian kami terhadap sesama, khususnya para lansia yang membutuhkan perhatian lebih," ujar Koordinator Divisi Sosial, Fajar Ramadhan.',
+ 'Sosial', 'https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=800', '2025-12-15'),
+
+('Seminar Motivasi: Sukses Kuliah dengan Beasiswa', 'seminar-motivasi-sukses-beasiswa',
+ 'IMADIKSI hadirkan pembicara inspiratif untuk memotivasi mahasiswa KIP-Kuliah agar sukses menempuh pendidikan.',
+ 'Palembang - Divisi Akademik IMADIKSI UIN Raden Fatah Palembang menggelar Seminar Motivasi bertajuk "Sukses Kuliah dengan Beasiswa" pada Sabtu (10/1/2026).
+
+Acara ini menghadirkan pembicara motivator nasional dan alumni berprestasi yang pernah menerima beasiswa KIP-Kuliah. Mereka berbagi tips dan pengalaman sukses menyelesaikan kuliah tepat waktu dengan IPK tinggi.
+
+"Beasiswa adalah amanah yang harus kita jaga. Gunakan kesempatan ini sebaik mungkin," pesan salah satu pembicara, Dr. Ahmad Syafii.',
+ 'Kegiatan', 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800', '2026-01-10'),
+
+('IMADIKSI Raih Juara Debat Bahasa Inggris Tingkat Provinsi', 'imadiksi-juara-debat-provinsi',
+ 'Tim debat IMADIKSI berhasil meraih juara 2 dalam kompetisi debat Bahasa Inggris antar organisasi se-Sumatera Selatan.',
+ 'Palembang - Kabar membanggakan datang dari tim debat Ikatan Mahasiswa Bidikmisi KIP-Kuliah (IMADIKSI) UIN Raden Fatah Palembang. Dalam lomba English Debate Competition tingkat Provinsi Sumatera Selatan yang diselenggarakan di Universitas Sriwijaya, tim IMADIKSI berhasil meraih posisi runner-up.
+
+Tim yang terdiri dari Rina Safitri, Ahmad Fadli, dan Dewi Lestari ini berhasil mengalahkan 12 tim dari berbagai universitas dan organisasi di Sumatera Selatan.
+
+"Ini adalah hasil kerja keras dan latihan intensif selama berbulan-bulan. Terima kasih kepada pembimbing dan seluruh pengurus IMADIKSI," ujar Rina selaku ketua tim.',
+ 'Prestasi', 'https://images.unsplash.com/photo-1577896851231-70ef18881754?w=800', '2026-01-05'),
+
+('Rapat Kerja Tahunan IMADIKSI 2026', 'rapat-kerja-tahunan-imadiksi-2026',
+ 'IMADIKSI menggelar Rapat Kerja Tahunan untuk menyusun program kerja dan strategi organisasi tahun 2026.',
+ 'Palembang - Ikatan Mahasiswa Bidikmisi KIP-Kuliah (IMADIKSI) UIN Raden Fatah Palembang menggelar Rapat Kerja Tahunan (Raker) pada tanggal 3-4 Januari 2026 di Aula Fakultas Tarbiyah.
+
+Raker dihadiri oleh seluruh pengurus inti dan perwakilan setiap divisi. Dalam kegiatan ini, dibahas evaluasi program kerja tahun sebelumnya serta penyusunan program kerja prioritas untuk tahun 2026.
+
+"Tahun ini kita fokus pada penguatan akademik anggota dan perluasan jaringan kerjasama," jelas Ketua Umum IMADIKSI, Muhammad Rizki Pratama.',
+ 'Organisasi', 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=800', '2026-01-04');
 
 -- =============================================
 -- 3. DIVISIONS (Divisi)
@@ -107,4 +143,58 @@ INSERT INTO events (title, date, location) VALUES
 ('Kompetisi Internal IMADIKSI', '2026-03-05', 'Gedung Serbaguna'),
 ('Pelatihan Public Speaking', '2026-03-15', 'Ruang Seminar Fakultas Ushuluddin');
 
+-- =============================================
+-- 6. ORGANIZATION MEMBERS (Struktur Organisasi)
+-- =============================================
+-- Note: division_id should reference actual division IDs from your database
+-- For core leadership, set division_id to NULL
+
+-- Core Leadership (Pengurus Inti)
+INSERT INTO organization_members (name, position, division_id, order_index, is_active) VALUES
+('Muhammad Rizki Pratama', 'Ketua Umum', NULL, 1, true),
+('Siti Aisyah Putri', 'Wakil Ketua', NULL, 2, true),
+('Ahmad Fauzi Rahman', 'Sekretaris 1', NULL, 3, true),
+('Dewi Safitri Amelia', 'Sekretaris 2', NULL, 4, true),
+('Nur Hidayatullah', 'Bendahara 1', NULL, 5, true),
+('Fitri Handayani', 'Bendahara 2', NULL, 6, true);
+
+-- Division Members (Anggota Divisi)
+-- These will be linked to divisions once division IDs are known
+-- You can update division_id after checking your divisions table
+
+-- Alternative: Insert with division reference (run after checking division IDs)
+-- First, let's add division members without division_id for now
+-- Then update them via Admin Panel
+
+INSERT INTO organization_members (name, position, division_id, order_index, is_active) VALUES
+-- Divisi Kaderisasi (update division_id manually)
+('Ahmad Fadli', 'Ketua Departemen', NULL, 1, true),
+('Siti Nur Azizah', 'Anggota', NULL, 2, true),
+('Budi Santoso', 'Anggota', NULL, 3, true),
+
+-- Divisi Akademik
+('Rinal Hidayat', 'Ketua Departemen', NULL, 1, true),
+('Dewi Lestari', 'Anggota', NULL, 2, true),
+('Riko Pratama', 'Anggota', NULL, 3, true),
+
+-- Divisi Humas
+('Rina Safitri', 'Ketua Departemen', NULL, 1, true),
+('Andi Putra', 'Fotografer', NULL, 2, true),
+('Mega Wati', 'Content Creator', NULL, 3, true),
+
+-- Divisi Sosial
+('Fajar Ramadhan', 'Ketua Departemen', NULL, 1, true),
+('Sri Wahyuni', 'Anggota', NULL, 2, true),
+('Doni Saputra', 'Anggota', NULL, 3, true),
+
+-- Divisi Kewirausahaan
+('Hendra Wijaya', 'Ketua Departemen', NULL, 1, true),
+('Yoga Pratama', 'Anggota', NULL, 2, true),
+('Fani Oktavia', 'Anggota', NULL, 3, true);
+
 -- Selesai! Data dummy berhasil ditambahkan.
+-- 
+-- PENTING: Setelah menjalankan SQL ini, pergi ke Admin Panel untuk:
+-- 1. Mengupdate division_id untuk anggota divisi
+-- 2. Mengupload foto anggota
+-- 3. Menyesuaikan urutan tampil

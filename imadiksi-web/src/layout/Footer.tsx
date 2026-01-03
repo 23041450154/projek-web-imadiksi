@@ -25,7 +25,7 @@ export function Footer() {
                             <li><Link to="/tentang" className="hover:text-primary-600 dark:hover:text-primary-400">Tentang Kami</Link></li>
                             <li><Link to="/divisi" className="hover:text-primary-600 dark:hover:text-primary-400">Divisi</Link></li>
                             <li><Link to="/program" className="hover:text-primary-600 dark:hover:text-primary-400">Program Kerja</Link></li>
-                            <li><Link to="/publikasi" className="hover:text-primary-600 dark:hover:text-primary-400">Berita & Artikel</Link></li>
+                            <li><Link to="/publikasi" className="hover:text-primary-600 dark:hover:text-primary-400">Berita & Pengumuman</Link></li>
                         </ul>
                     </div>
 

@@ -29,7 +29,7 @@ export default function News() {
     return (
         <div className="min-h-screen py-20 bg-gray-50 dark:bg-gray-900">
             <div className="container mx-auto px-4 max-w-5xl">
-                <SectionHeading title="Berita & Artikel" subtitle="Informasi terbaru dan tulisan inspiratif." />
+                <SectionHeading title="Berita & Pengumuman" subtitle="Informasi terbaru dan tulisan inspiratif." />
 
                 <div className="mb-10 max-w-md mx-auto">
                     <Input

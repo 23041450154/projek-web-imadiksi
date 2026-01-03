@@ -19,7 +19,7 @@ const navItems = [
     { name: "Hero Slides", path: "/admin/hero-slides", icon: Sparkles },
     { name: "Struktur Organisasi", path: "/admin/organization", icon: Crown },
     { name: "Program Kerja", path: "/admin/programs", icon: FileText },
-    { name: "Berita & Artikel", path: "/admin/posts", icon: Newspaper },
+    { name: "Berita & Pengumuman", path: "/admin/posts", icon: Newspaper },
     { name: "Divisi", path: "/admin/divisions", icon: Users },
     { name: "Galeri", path: "/admin/gallery", icon: Image },
     { name: "Event", path: "/admin/events", icon: CalendarDays },

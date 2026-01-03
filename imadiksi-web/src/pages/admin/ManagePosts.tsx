@@ -78,7 +78,7 @@ export default function ManagePosts() {
     return (
         <div className="space-y-6">
             <div className="flex items-center justify-between">
-                <h1 className="text-2xl font-bold text-gray-900 dark:text-white">Berita & Artikel</h1>
+                <h1 className="text-2xl font-bold text-gray-900 dark:text-white">Berita & Pengumuman</h1>
                 <Button onClick={() => openModal()}>
                     <Plus className="w-4 h-4 mr-2" /> Tambah Artikel
                 </Button>

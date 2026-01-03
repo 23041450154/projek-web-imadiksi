@@ -23,7 +23,7 @@ export default function AdminDashboard() {
 
     const stats = [
         { name: "Program Kerja", count: programs.length, icon: FileText, color: "bg-blue-500" },
-        { name: "Berita & Artikel", count: posts.length, icon: Newspaper, color: "bg-green-500" },
+        { name: "Berita & Pengumuman", count: posts.length, icon: Newspaper, color: "bg-green-500" },
         { name: "Divisi", count: divisions.length, icon: Users, color: "bg-purple-500" },
         { name: "Galeri", count: gallery.length, icon: Image, color: "bg-pink-500" },
         { name: "Event", count: events.length, icon: CalendarDays, color: "bg-orange-500" },

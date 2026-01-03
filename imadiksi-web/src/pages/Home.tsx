@@ -160,7 +160,7 @@ export default function Home() {
                                             <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3 line-clamp-2 group-hover:text-primary-600 transition-colors font-heading">
                                                 {post.title}
                                             </h3>
-                                            <p className="text-gray-600 dark:text-gray-400 text-sm line-clamp-3 mb-4 flex-1">
+                                            <p className="text-gray-600 dark:text-gray-400 text-sm line-clamp-3 mb-4 flex-1 break-words" style={{ wordBreak: 'break-word' }}>
                                                 {post.excerpt}
                                             </p>
                                             <div className="flex items-center text-primary-600 font-medium text-sm mt-auto group-hover:translate-x-1 transition-transform">

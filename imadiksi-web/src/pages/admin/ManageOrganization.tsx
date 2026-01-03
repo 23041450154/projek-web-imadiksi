@@ -198,12 +198,34 @@ export default function ManageOrganization() {
                             </div>
                             <div>
                                 <label className="block text-sm font-medium mb-1">Jabatan</label>
-                                <Input
+                                <select
+                                    className="w-full px-3 py-2 border rounded-lg dark:bg-gray-700 dark:border-gray-600 outline-none focus:ring-2 focus:ring-primary-500"
                                     value={formData.position}
                                     onChange={(e) => setFormData({ ...formData, position: e.target.value })}
-                                    placeholder="Contoh: Ketua Umum, Koordinator, dll"
                                     required
-                                />
+                                >
+                                    <option value="">Pilih Jabatan</option>
+                                    {activeTab === "core" ? (
+                                        <>
+                                            <option value="Ketua Umum">Ketua Umum</option>
+                                            <option value="Wakil Ketua Umum">Wakil Ketua Umum</option>
+                                            <option value="Sekretaris 1">Sekretaris 1</option>
+                                            <option value="Sekretaris 2">Sekretaris 2</option>
+                                            <option value="Bendahara 1">Bendahara 1</option>
+                                            <option value="Bendahara 2">Bendahara 2</option>
+                                        </>
+                                    ) : (
+                                        <>
+                                            <option value="Ketua">Ketua</option>
+                                            <option value="Sekretaris">Sekretaris</option>
+                                            <option value="Bendahara">Bendahara</option>
+                                            <option value="Sub Bidang 1">Sub Bidang 1</option>
+                                            <option value="Sub Bidang 2">Sub Bidang 2</option>
+                                            <option value="Sub Bidang 3">Sub Bidang 3</option>
+                                            <option value="Anggota">Anggota</option>
+                                        </>
+                                    )}
+                                </select>
                             </div>
                             {activeTab === "division" && (
                                 <div>
