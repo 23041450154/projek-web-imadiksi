@@ -1,0 +1,38 @@
+[
+    {
+        "id": "g1",
+        "title": "Pelantikan Pengurus 2024",
+        "image": "https://placehold.co/600x400/1a1a1a/ffffff?text=Pelantikan",
+        "category": "Event"
+    },
+    {
+        "id": "g2",
+        "title": "Bakti Sosial Desa Binaan",
+        "image": "https://placehold.co/600x400/1a1a1a/ffffff?text=Baksos",
+        "category": "Sosial"
+    },
+    {
+        "id": "g3",
+        "title": "Seminar Nasional",
+        "image": "https://placehold.co/600x400/1a1a1a/ffffff?text=Seminar",
+        "category": "Akademik"
+    },
+    {
+        "id": "g4",
+        "title": "Kunjungan ke Panti Asuhan",
+        "image": "https://placehold.co/600x400/1a1a1a/ffffff?text=Panti+Asuhan",
+        "category": "Sosial"
+    },
+    {
+        "id": "g5",
+        "title": "Workshop Design Grafis",
+        "image": "https://placehold.co/600x400/1a1a1a/ffffff?text=Workshop",
+        "category": "Workshop"
+    },
+    {
+        "id": "g6",
+        "title": "Rapat Kerja Tahunan",
+        "image": "https://placehold.co/600x400/1a1a1a/ffffff?text=Raker",
+        "category": "Event"
+    }
+]

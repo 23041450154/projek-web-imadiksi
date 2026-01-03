@@ -1,0 +1,29 @@
+[
+    {
+        "id": "p1",
+        "title": "IMADIKSI Rayakan Ulang Tahun ke-10",
+        "slug": "imadiksi-ultah-10",
+        "date": "2024-01-20",
+        "category": "Berita",
+        "excerpt": "Perayaan satu dekade IMADIKSI dimeriahkan dengan berbagai lomba dan pentas seni.",
+        "content": "IMADIKSI merayakan ulang tahun ke-10 dengan tema 'Satu Dekade Mengabdi, Sejuta Prestasi'. Acara ini dihadiri oleh alumni dan seluruh anggota aktif. Rangkaian acara meliputi lomba esai, pentas seni, dan potong tumpeng."
+    },
+    {
+        "id": "p2",
+        "title": "Tips Sukses Menulis Essay Beasiswa",
+        "slug": "tips-essay-beasiswa",
+        "date": "2024-04-05",
+        "category": "Artikel",
+        "excerpt": "Panduan lengkap menulis esai beasiswa yang menarik dan lolos seleksi.",
+        "content": "Menulis esai beasiswa memerlukan strategi khusus. Mulai dari struktur paragraf, penggunaan bahasa yang persuasif, hingga menonjolkan keunikan diri. Simak tips lengkapnya di sini."
+    },
+    {
+        "id": "p3",
+        "title": "Kunjungan Industri ke Startup Unicorn",
+        "slug": "kunjungan-industri-unicorn",
+        "date": "2024-07-15",
+        "category": "Kegiatan",
+        "excerpt": "Divisi Kewirausahaan mengadakan kunjungan industri untuk belajar budaya kerja startup.",
+        "content": "Kunjungan industri kali ini menyasar ke salah satu startup Unicorn di Jakarta. Peserta diajak berkeliling kantor dan berdiskusi langsung dengan tim engineering dan product."
+    }
+]

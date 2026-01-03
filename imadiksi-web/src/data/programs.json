@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "title": "Workshop Program Kreativitas Mahasiswa (PKM)",
+    "summary": "Pelatihan intensif penulisan proposal PKM untuk anggota IMADIKSI.",
+    "tags": ["Akademik", "Workshop"],
+    "date": "2024-03-15",
+    "status": "done"
+  },
+  {
+    "id": "2",
+    "title": "IMADIKSI Mengajar",
+    "summary": "Kegiatan pengabdian masyarakat berupa bimbingan belajar gratis.",
+    "tags": ["Sosial", "Pengabdian"],
+    "date": "2024-06-20",
+    "status": "ongoing"
+  },
+  {
+    "id": "3",
+    "title": "Seminar Nasional Kewirausahaan",
+    "summary": "Membangun jiwa entrepreneur muda di era digital.",
+    "tags": ["Event", "Kewirausahaan"],
+    "date": "2024-11-10",
+    "status": "upcoming"
+  }
+]

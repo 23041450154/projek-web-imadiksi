@@ -1,0 +1,107 @@
+[
+    {
+        "id": "d1",
+        "name": "PSDM",
+        "slug": "psdm",
+        "description": "Pengembangan Sumber Daya Mahasiswa, fokus pada kaderisasi dan peningkatan soft skill anggota.",
+        "workPrograms": [
+            "Latihan Dasar Kepemimpinan",
+            "Upgrading Pengurus",
+            "Mentoring Beasiswa"
+        ],
+        "members": [
+            {
+                "name": "Andi Saputra",
+                "role": "Ketua Divisi"
+            },
+            {
+                "name": "Budi Santoso",
+                "role": "Staf Ahli"
+            }
+        ]
+    },
+    {
+        "id": "d2",
+        "name": "Humas",
+        "slug": "humas",
+        "description": "Hubungan Masyarakat, menjalin relasi dengan pihak eksternal dan branding organisasi.",
+        "workPrograms": [
+            "Safari Kampus",
+            "Media Partner",
+            "Alumni Connect"
+        ],
+        "members": [
+            {
+                "name": "Citra Lestari",
+                "role": "Ketua Divisi"
+            },
+            {
+                "name": "Doni Pratama",
+                "role": "Staf"
+            }
+        ]
+    },
+    {
+        "id": "d3",
+        "name": "Kominfo",
+        "slug": "kominfo",
+        "description": "Komunikasi dan Informasi, mengelola media sosial dan publikasi digital.",
+        "workPrograms": [
+            "Content Creating",
+            "Website Management",
+            "Desain Grafis Class"
+        ],
+        "members": [
+            {
+                "name": "Eka Putri",
+                "role": "Ketua Divisi"
+            },
+            {
+                "name": "Fajar Sidiq",
+                "role": "Video Editor"
+            }
+        ]
+    },
+    {
+        "id": "d4",
+        "name": "Kewirausahaan",
+        "slug": "kewirausahaan",
+        "description": "Membangun jiwa entrepreneur dan kemandirian finansial organisasi.",
+        "workPrograms": [
+            "Business Plan Competition",
+            "Danus Kreatif",
+            "Merchandise Store"
+        ],
+        "members": [
+            {
+                "name": "Gita Gutawa",
+                "role": "Ketua Divisi"
+            },
+            {
+                "name": "Hadi Sucipto",
+                "role": "Staf"
+            }
+        ]
+    },
+    {
+        "id": "d5",
+        "name": "Akademik",
+        "slug": "akademik",
+        "description": "Fokus pada peningkatan prestasi akademik dan riset ilmiah.",
+        "workPrograms": [
+            "Study Club",
+            "Info Beasiswa S2",
+            "PKM Center"
+        ],
+        "members": [
+            {
+                "name": "Indah Permata",
+                "role": "Ketua Divisi"
+            },
+            {
+                "name": "Joko Widodo",
+                "role": "Staf Riset"
+            }
+        ]
+    }
+]

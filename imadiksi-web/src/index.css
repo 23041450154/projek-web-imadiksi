@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@theme {
+  /* Primary Palette - Antique Gold (Premium, Sophisticated) */
+  --color-primary-50: #fdf8ed;
+  --color-primary-100: #f9edcf;
+  --color-primary-200: #f2d89b;
+  --color-primary-300: #e9bf5f;
+  --color-primary-400: #e2a832;
+  --color-primary-500: #d4911d;
+  --color-primary-600: #b87316;
+  --color-primary-700: #975516;
+  --color-primary-800: #7c4419;
+  --color-primary-900: #663918;
+  --color-primary-950: #3a1c09;
+
+  /* Accent Palette - Blue (Previous Primary) */
+  --color-accent-50: #eff6ff;
+  --color-accent-100: #dbeafe;
+  --color-accent-200: #bfdbfe;
+  --color-accent-300: #93c5fd;
+  --color-accent-400: #60a5fa;
+  --color-accent-500: #3b82f6;
+  --color-accent-600: #2563eb;
+  --color-accent-700: #1d4ed8;
+  --color-accent-800: #1e40af;
+  --color-accent-900: #1e3a8a;
+  --color-accent-950: #172554;
+
+  --font-heading: 'Plus Jakarta Sans', sans-serif;
+  --font-sans: 'Inter', sans-serif;
+
+  --radius-xl: 1rem;
+  --radius-2xl: 1.5rem;
+}
+
+@layer base {
+  body {
+    @apply antialiased text-gray-900 bg-gray-50 dark:bg-gray-950 dark:text-gray-100;
+  }
+}

@@ -1,0 +1,23 @@
+[
+  {
+    "id": "e1",
+    "title": "Open Recruitment Anggota Baru",
+    "date": "2024-08-01",
+    "location": "Gedung Student Center Lt. 2",
+    "description": "Penerimaan anggota baru IMADIKSI angkatan 2024."
+  },
+  {
+    "id": "e2",
+    "title": "Rapat Kerja Pengurus",
+    "date": "2024-02-15",
+    "location": "Ruang Sidang Utama",
+    "description": "Pembahasan program kerja satu periode kepengurusan."
+  },
+  {
+    "id": "e3",
+    "title": "Training Motivasi Berprestasi",
+    "date": "2024-09-12",
+    "location": "Aula Kampus",
+    "description": "Training untuk meningkatkan motivasi akademik mahasiswa."
+  }
+]
