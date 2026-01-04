@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+/* Enable dark mode with class strategy for Tailwind v4 */
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   /* Primary Palette - Antique Gold (Premium, Sophisticated) */
   --color-primary-50: #fdf8ed;
