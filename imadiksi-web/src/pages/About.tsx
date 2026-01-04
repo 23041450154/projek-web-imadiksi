@@ -10,25 +10,52 @@ export default function About() {
         .filter(m => !m.division_id && m.is_active !== false)
         .sort((a, b) => (a.order_index || 0) - (b.order_index || 0));
 
-    // Get member by position keywords
+    // Get single member by position keywords
     const getByPosition = (keywords: string[]) => {
         return coreMembers.find(m =>
             keywords.some(k => m.position.toLowerCase().includes(k.toLowerCase()))
         );
     };
 
+    // Get multiple members by position keywords
+    const getMultipleByPosition = (keywords: string[]) => {
+        return coreMembers.filter(m =>
+            keywords.some(k => m.position.toLowerCase().includes(k.toLowerCase()))
+        );
+    };
+
     const ketuaUmum = getByPosition(["ketua umum"]);
     const wakilKetua = getByPosition(["wakil ketua", "wakil"]);
-    const sekretaris = getByPosition(["sekretaris"]);
-    const bendahara = getByPosition(["bendahara"]);
+    const sekretarisList = getMultipleByPosition(["sekretaris"]);
+    const bendaharaList = getMultipleByPosition(["bendahara"]);
 
-    // Define the structure with colors
+    // Define the structure with colors - dynamically include all sekretaris and bendahara
     const structureData = [
         { member: ketuaUmum, fallbackName: "Ketua Umum", fallbackRole: "Ketua Umum", color: "bg-blue-100 dark:bg-blue-900/20" },
         { member: wakilKetua, fallbackName: "Wakil Ketua", fallbackRole: "Wakil Ketua", color: "bg-pink-100 dark:bg-pink-900/20" },
-        { member: sekretaris, fallbackName: "Sekretaris", fallbackRole: "Sekretaris Jenderal", color: "bg-green-100 dark:bg-green-900/20" },
-        { member: bendahara, fallbackName: "Bendahara", fallbackRole: "Bendahara Umum", color: "bg-yellow-100 dark:bg-yellow-900/20" }
+        // All Sekretaris
+        ...sekretarisList.map(s => ({
+            member: s,
+            fallbackName: s.name,
+            fallbackRole: s.position,
+            color: "bg-green-100 dark:bg-green-900/20"
+        })),
+        // All Bendahara
+        ...bendaharaList.map(b => ({
+            member: b,
+            fallbackName: b.name,
+            fallbackRole: b.position,
+            color: "bg-yellow-100 dark:bg-yellow-900/20"
+        }))
     ];
+
+    // Add fallback if no sekretaris or bendahara found
+    if (sekretarisList.length === 0) {
+        structureData.splice(2, 0, { member: undefined, fallbackName: "Sekretaris", fallbackRole: "Sekretaris", color: "bg-green-100 dark:bg-green-900/20" });
+    }
+    if (bendaharaList.length === 0) {
+        structureData.push({ member: undefined, fallbackName: "Bendahara", fallbackRole: "Bendahara", color: "bg-yellow-100 dark:bg-yellow-900/20" });
+    }
 
     return (
         <div className="min-h-screen py-20 bg-gray-50 dark:bg-gray-900">
@@ -93,7 +120,7 @@ export default function About() {
 
                 {/* Struktur Organisasi */}
                 <div>
-                    <SectionHeading title="Struktur Organisasi" subtitle="Badan Pengurus Harian Periode 2024/2025" />
+                    <SectionHeading title="Struktur Organisasi" subtitle="Badan Pengurus Harian Inti Periode 2025/2026" />
                     {loading ? (
                         <div className="flex justify-center py-12">
                             <Loader2 className="w-8 h-8 text-primary-600 animate-spin" />
