@@ -1,7 +1,35 @@
 import { SectionHeading } from "../components/ui/SectionHeading";
-import { Users, History, Target } from "lucide-react";
+import { Users, History, Target, Loader2 } from "lucide-react";
+import { useData } from "../contexts/DataContext";
 
 export default function About() {
+    const { organizationMembers, loading } = useData();
+
+    // Filter core members (no division) and active, sorted by order
+    const coreMembers = organizationMembers
+        .filter(m => !m.division_id && m.is_active !== false)
+        .sort((a, b) => (a.order_index || 0) - (b.order_index || 0));
+
+    // Get member by position keywords
+    const getByPosition = (keywords: string[]) => {
+        return coreMembers.find(m =>
+            keywords.some(k => m.position.toLowerCase().includes(k.toLowerCase()))
+        );
+    };
+
+    const ketuaUmum = getByPosition(["ketua umum"]);
+    const wakilKetua = getByPosition(["wakil ketua", "wakil"]);
+    const sekretaris = getByPosition(["sekretaris"]);
+    const bendahara = getByPosition(["bendahara"]);
+
+    // Define the structure with colors
+    const structureData = [
+        { member: ketuaUmum, fallbackName: "Ketua Umum", fallbackRole: "Ketua Umum", color: "bg-blue-100 dark:bg-blue-900/20" },
+        { member: wakilKetua, fallbackName: "Wakil Ketua", fallbackRole: "Wakil Ketua", color: "bg-pink-100 dark:bg-pink-900/20" },
+        { member: sekretaris, fallbackName: "Sekretaris", fallbackRole: "Sekretaris Jenderal", color: "bg-green-100 dark:bg-green-900/20" },
+        { member: bendahara, fallbackName: "Bendahara", fallbackRole: "Bendahara Umum", color: "bg-yellow-100 dark:bg-yellow-900/20" }
+    ];
+
     return (
         <div className="min-h-screen py-20 bg-gray-50 dark:bg-gray-900">
             <div className="container mx-auto px-4">
@@ -63,25 +91,40 @@ export default function About() {
                     </div>
                 </div>
 
-                {/* Structure Placeholder */}
+                {/* Struktur Organisasi */}
                 <div>
                     <SectionHeading title="Struktur Organisasi" subtitle="Badan Pengurus Harian Periode 2024/2025" />
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto text-center">
-                        {[
-                            { name: "Muhammad Fulan", role: "Ketua Umum", color: "bg-blue-100 dark:bg-blue-900/20" },
-                            { name: "Siti Aminah", role: "Wakil Ketua", color: "bg-pink-100 dark:bg-pink-900/20" },
-                            { name: "Ahmad Dahlan", role: "Sekretaris Jenderal", color: "bg-green-100 dark:bg-green-900/20" },
-                            { name: "Nur Hasanah", role: "Bendahara Umum", color: "bg-yellow-100 dark:bg-yellow-900/20" }
-                        ].map((person, idx) => (
-                            <div key={idx} className="p-6 rounded-2xl bg-white dark:bg-gray-800 shadow-sm border border-gray-100 dark:border-gray-700 hover:shadow-md transition-shadow">
-                                <div className={`w-24 h-24 mx-auto rounded-full mb-4 ${person.color} flex items-center justify-center`}>
-                                    <Users className="w-10 h-10 opacity-50" />
+                    {loading ? (
+                        <div className="flex justify-center py-12">
+                            <Loader2 className="w-8 h-8 text-primary-600 animate-spin" />
+                        </div>
+                    ) : (
+                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto text-center">
+                            {structureData.map((item, idx) => (
+                                <div key={idx} className="p-6 rounded-2xl bg-white dark:bg-gray-800 shadow-sm border border-gray-100 dark:border-gray-700 hover:shadow-md transition-shadow">
+                                    {item.member?.photo_url ? (
+                                        <div className={`w-24 h-24 mx-auto rounded-full mb-4 overflow-hidden border-4 ${item.color.replace('bg-', 'border-').replace('/20', '/40')}`}>
+                                            <img
+                                                src={item.member.photo_url}
+                                                alt={item.member.name}
+                                                className="w-full h-full object-cover"
+                                            />
+                                        </div>
+                                    ) : (
+                                        <div className={`w-24 h-24 mx-auto rounded-full mb-4 ${item.color} flex items-center justify-center`}>
+                                            <Users className="w-10 h-10 opacity-50" />
+                                        </div>
+                                    )}
+                                    <h3 className="font-bold text-gray-900 dark:text-white">
+                                        {item.member?.name || item.fallbackName}
+                                    </h3>
+                                    <p className="text-sm text-gray-500 dark:text-gray-400">
+                                        {item.member?.position || item.fallbackRole}
+                                    </p>
                                 </div>
-                                <h3 className="font-bold text-gray-900 dark:text-white">{person.name}</h3>
-                                <p className="text-sm text-gray-500 dark:text-gray-400">{person.role}</p>
-                            </div>
-                        ))}
-                    </div>
+                            ))}
+                        </div>
+                    )}
                 </div>
 
             </div>
