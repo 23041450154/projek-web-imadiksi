@@ -52,14 +52,14 @@ export default function Contact() {
                                     <MapPin className="w-6 h-6 shrink-0 text-primary-200" />
                                     <div>
                                         <h4 className="font-semibold text-primary-100">Alamat</h4>
-                                        <p className="text-white/80 text-sm">Gedung Student Center Lt. 2, Universitas Islam Negeri, Indonesia.</p>
+                                        <p className="text-white/80 text-sm">Universitas islam negeri raden fatah palembang</p>
                                     </div>
                                 </div>
                                 <div className="flex items-center gap-4">
                                     <Mail className="w-6 h-6 shrink-0 text-primary-200" />
                                     <div>
                                         <h4 className="font-semibold text-primary-100">Email</h4>
-                                        <p className="text-white/80 text-sm">info@imadiksi.org</p>
+                                        <p className="text-white/80 text-sm">imadiksi_uin@gmail.com</p>
                                     </div>
                                 </div>
                                 <div className="flex items-center gap-4">

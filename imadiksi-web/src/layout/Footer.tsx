@@ -14,7 +14,7 @@ export function Footer() {
                             <span>IMADIKSI</span>
                         </Link>
                         <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
-                            Organisasi Mahasiswa yang Berfokus pada Pengembangan Kompetensi dan Kolaborasi. Wadah aspirasi dan kreasi mahasiswa Bidikmisi/KIP-K.
+                            Organisasi Mahasiswa yang Berfokus pada Pengembangan Kompetensi dan Kolaborasi. Wadah aspirasi dan kreasi mahasiswa Bidikmisi/KIP-K UIN Raden Fatah Palembang.
                         </p>
                     </div>
 
@@ -35,15 +35,15 @@ export function Footer() {
                         <ul className="space-y-3 text-sm text-gray-600 dark:text-gray-400">
                             <li className="flex items-start gap-3">
                                 <MapPin className="w-5 h-5 text-primary-600 shrink-0" />
-                                <span>Gedung Student Center Lt. 2, Kampus Pusat</span>
+                                <span>Universitas Islam Negeri Raden Fatah Palembang</span>
                             </li>
                             <li className="flex items-center gap-3">
                                 <Mail className="w-5 h-5 text-primary-600 shrink-0" />
-                                <span>info@imadiksi.org</span>
+                                <span>imadiksikip@gmail.com</span>
                             </li>
                             <li className="flex items-center gap-3">
                                 <Phone className="w-5 h-5 text-primary-600 shrink-0" />
-                                <span>+62 812-3456-7890</span>
+                                <span>+62 823-8910-5302</span>
                             </li>
                         </ul>
                     </div>
@@ -52,7 +52,7 @@ export function Footer() {
                     <div>
                         <h3 className="font-semibold text-gray-900 dark:text-white mb-4">Ikuti Kami</h3>
                         <div className="flex gap-4">
-                            <a href="#" className="p-2 bg-gray-100 dark:bg-gray-900 rounded-full hover:bg-primary-100 dark:hover:bg-primary-900 text-gray-600 dark:text-gray-400 hover:text-primary-600 transition-colors">
+                            <a href="https://www.instagram.com/imadiksi_uinrf?igsh=MXRndjlkNHZ6ZTFuZg==" className="p-2 bg-gray-100 dark:bg-gray-900 rounded-full hover:bg-primary-100 dark:hover:bg-primary-900 text-gray-600 dark:text-gray-400 hover:text-primary-600 transition-colors">
                                 <Instagram className="w-5 h-5" />
                             </a>
                             <a href="#" className="p-2 bg-gray-100 dark:bg-gray-900 rounded-full hover:bg-primary-100 dark:hover:bg-primary-900 text-gray-600 dark:text-gray-400 hover:text-primary-600 transition-colors">

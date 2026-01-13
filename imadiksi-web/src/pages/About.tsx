@@ -110,7 +110,7 @@ export default function About() {
                     <SectionHeading title="Sejarah Singkat" subtitle="Perjalanan kami dari masa ke masa." />
                     <div className="max-w-4xl mx-auto prose dark:prose-invert text-center">
                         <p>
-                            Didirikan pada tahun 2010, IMADIKSI berawal dari inisiatif sekumpulan mahasiswa penerima Bidikmisi yang merasakan perlunya wadah untuk saling berbagi informasi dan motivasi. Seiring berjalannya waktu, organisasi ini berkembang tidak hanya sebagai forum komunikasi, tetapi juga sebagai inkubator prestasi.
+                            Didirikan pada tahun 2016, IMADIKSI berawal dari inisiatif sekumpulan mahasiswa penerima Bidikmisi yang merasakan perlunya wadah untuk saling berbagi informasi dan motivasi. Seiring berjalannya waktu, organisasi ini berkembang tidak hanya sebagai forum komunikasi, tetapi juga sebagai inkubator prestasi.
                         </p>
                         <p>
                             Hingga kini, IMADIKSI telah mencetak ribuan alumni yang tersebar di berbagai sektor profesional, membuktikan bahwa keterbatasan ekonomi bukanlah penghalang untuk meraih kesuksesan.
